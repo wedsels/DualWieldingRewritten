@@ -92,9 +92,9 @@ Ext.Events.StatsLoaded:Subscribe(
             local damage
             local type = false
             if index then
-                damage = _V.Die[ index + 1 ]
+                damage = _V.Die[ index - 1 ]
                 if not damage then
-                    damage = _V.Die[ index - 1 ]
+                    damage = _V.Die[ index + 1 ]
                     type = true
                 end
                 damage = count .. damage
